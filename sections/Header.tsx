@@ -87,7 +87,7 @@ export default function Header({
           htmlFor="mobile-drawer-nav"
           class="flex lg:hidden btn btn-ghost drawer-button"
         >
-          <Icon id="Bars3" size={24} strokeWidth={0.1} />
+          <Icon id="Bars3" class="text-secondary" size={24} strokeWidth={0.1} />
         </label>
       </div>
 
@@ -100,16 +100,24 @@ export default function Header({
           class="drawer-overlay"
         />
 
-        <div class="flex flex-col gap-8 min-h-full w-80 bg-base-100 text-base-content">
-          <a class="p-4" href="/">
-            <Image
-              src={logo.src || ""}
-              width={100}
-              height={28}
-              alt={logo.alt}
-            />
-          </a>
-
+        <div class="flex flex-col gap-8 min-h-full w-80 bg-primary text-base-content">
+          <div class="flex items-center font-black justify-between">
+            <a class="p-4" href="/">
+              <Image
+                src={logo.src || ""}
+                width={100}
+                height={28}
+                alt={logo.alt}
+              />
+            </a>
+            <label
+              htmlFor="mobile-drawer-nav"
+              aria-label="close sidebar"
+              class="text-secondary cursor-pointer font-semibold mr-5 px-2 font-bold rounded border-[2px] border-secondary"
+            >
+            X
+            </label>
+          </div>
           <ul class="menu">
             {navigation?.links.map((link) => (
               <li>
