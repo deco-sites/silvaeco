@@ -113,7 +113,7 @@ export default function Header({
             <label
               htmlFor="mobile-drawer-nav"
               aria-label="close sidebar"
-              class="text-secondary cursor-pointer font-semibold mr-5 px-2 font-bold rounded border-[2px] border-secondary"
+              class="text-secondary cursor-pointer text-lg font-semibold leading-none mr-5 py-0 px-1 font-bold rounded border-[2px] border-secondary"
             >
             X
             </label>
