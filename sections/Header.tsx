@@ -59,7 +59,7 @@ export default function Header({
                 <a
                   href={link.url}
                   aria-label={link.label}
-                  class="link no-underline hover:underline p-4"
+                  class="link no-underline hover:underline p-4 text-base"
                 >
                   {link.label}
                 </a>
@@ -120,7 +120,7 @@ export default function Header({
           </div>
           <ul class="menu">
             {navigation?.links.map((link) => (
-              <li>
+              <li class="text-accent">
                 <a href={link.url} aria-label={link.label}>
                   {link.label}
                 </a>
