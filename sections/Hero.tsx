@@ -68,13 +68,13 @@ export default function HeroFlats({
             }`}
           >
             <div
-              class="inline-block lg:text-[80px] text-4xl leading-none font-medium"
+              class="inline-block text-5xl leading-none font-semibold text-primary"
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
             >
             </div>
-            <p class="text-lg md:text-md leading-[150%]">
+            <p class="text-lg md:text-md text-primary leading-[150%]">
               {description}
             </p>
             <div class="flex items-center gap-3">
@@ -84,7 +84,7 @@ export default function HeroFlats({
                   id={item?.id}
                   href={item?.href}
                   target={item?.href.includes("http") ? "_blank" : "_self"}
-                  class={`font-normal btn btn-primary ${
+                  class={`font-semibold text-accent btn btn-primary ${
                     item.outline && "btn-outline"
                   }`}
                 >
