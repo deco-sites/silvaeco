@@ -52,7 +52,7 @@ export default function Header({
         </a>
 
         <div class="hidden items-center justify-between lg:flex w-full">
-          <ul class="flex">
+          <ul class="flex w-full justify-center">
             {navigation.links.map((link) => (
               <li class="text-accent">
                 <a
