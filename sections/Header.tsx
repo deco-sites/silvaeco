@@ -54,7 +54,7 @@ export default function Header({
         <div class="hidden items-center justify-between lg:flex w-full">
           <ul class="flex w-full justify-center">
             {navigation.links.map((link) => (
-              <li class="text-accent">
+              <li class="text-accent font-semibold text-base">
                 <a
                   href={link.url}
                   aria-label={link.label}
