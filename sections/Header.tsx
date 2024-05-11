@@ -37,8 +37,7 @@ export default function Header({
       { label: "Contact", url: "/" },
     ],
     buttons: [
-      { id: "change-me-1", href: "/", text: "Change me", outline: false },
-      { id: "change-me-2", href: "/", text: "Change me", outline: true },
+      { id: "change-me-1", href: "/", text: "Fale com a gente", outline: false }
     ],
   },
 }: Nav) {
@@ -55,7 +54,7 @@ export default function Header({
         <div class="hidden items-center justify-between lg:flex w-full">
           <ul class="flex">
             {navigation.links.map((link) => (
-              <li>
+              <li class="text-accent">
                 <a
                   href={link.url}
                   aria-label={link.label}
@@ -73,7 +72,7 @@ export default function Header({
                 id={item?.id}
                 href={item?.href ?? "#"}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`font-normal btn btn-primary ${
+                class={`bg-secondary text-xl text-primary font-bold w-[235px] h-[64px] rounded-lg  btn btn-primary ${
                   item.outline && "btn-outline"
                 }`}
               >
@@ -128,14 +127,14 @@ export default function Header({
             ))}
           </ul>
 
-          <ul class="p-4 flex items-center gap-3">
+          <ul class="p-4 flex flex-col items-center gap-3">
             {navigation.buttons?.map((item) => (
               <a
                 key={item?.id}
                 id={item?.id}
                 href={item?.href ?? "#"}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`font-normal btn btn-primary ${
+                class={`bg-secondary text-xl text-primary font-bold w-[235px] h-[64px] rounded-lg btn btn-primary  ${
                   item.outline && "btn-outline"
                 }`}
               >
