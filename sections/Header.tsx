@@ -72,7 +72,7 @@ export default function Header({
                 id={item?.id}
                 href={item?.href ?? "#"}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`bg-secondary text-xl text-primary font-bold w-[235px] h-[64px] rounded-lg  btn btn-primary ${
+                class={`bg-secondary text-xl text-primary font-bold w-[235px] h-[64px] rounded-lg hover:bg-neutral hover:text-secondary   btn btn-primary ${
                   item.outline && "btn-outline"
                 }`}
               >
@@ -134,7 +134,7 @@ export default function Header({
                 id={item?.id}
                 href={item?.href ?? "#"}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`bg-secondary text-xl text-primary font-bold w-[235px] h-[64px] rounded-lg btn btn-primary  ${
+                class={`bg-secondary text-xl text-primary font-bold w-[235px] h-[64px] rounded-lg hover:bg-neutral hover:text-secondary btn btn-primary  ${
                   item.outline && "btn-outline"
                 }`}
               >
